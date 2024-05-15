@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "67b99430fc98bcff130c7a7fd430a21c"
+name = "gift-card"
+handle = "gift-card-41"
+application_url = "https://example.com/"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = false
+dev_store_url = "quickstart-ad4445a6.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [ "https://example.com/api/auth" ]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false

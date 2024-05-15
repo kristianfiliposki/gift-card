@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "d857e6a9ae3ac2241af1f53a6238a358"
+name = "gen-gift"
+handle = "gen-gift"
+application_url = "https://aluminium-validity-resource-shelter.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-ad4445a6.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://aluminium-validity-resource-shelter.trycloudflare.com/auth/callback",
+  "https://aluminium-validity-resource-shelter.trycloudflare.com/auth/shopify/callback",
+  "https://aluminium-validity-resource-shelter.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
